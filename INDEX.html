@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEOPLATECH 공장 오픈식 초청장</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons: QrCode 대신 Camera 아이콘을 사용합니다. -->
+    <script type="module">
+        import { createIcons, Calendar, MapPin, Phone, Mail, Camera } from 'https://unpkg.com/lucide@latest/dist/esm/lucide.js';
+        createIcons({ icons: { Calendar, MapPin, Phone, Mail, Camera } });
+    </script>
+    <!-- QR Code Generator Library는 더 이상 필요 없으므로 제거했습니다. -->
+    <style>
+        /* Custom font for readability */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f7f9fb; /* Light background */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-0 m-0">
+
+    <!-- Invitation Container (Simulating Mobile View) -->
+    <div class="max-w-md mx-auto bg-white shadow-2xl rounded-xl overflow-hidden my-4">
+
+        <!-- 1. Cover Page / Title (Primary: Green, Accent: Amber) -->
+        <header class="relative bg-green-700 p-8 text-center text-white">
+            <!-- Background Element: Warm Orange/Gold Accent -->
+            <div class="absolute inset-x-0 top-0 h-1/4 bg-amber-500 opacity-20 transform -skew-y-3 origin-top-left"></div>
+            
+            <div class="relative z-10">
+                <h1 class="text-4xl font-extrabold mb-2 tracking-tight">
+                    NEOPLATECH
+                </h1>
+                <p class="text-xl font-light text-amber-300">Indonesia</p>
+                <div class="mt-6 border-t border-amber-400 w-16 mx-auto"></div>
+                <h2 class="text-2xl font-bold mt-4">
+                    공장 준공 및 오픈식
+                </h2>
+                <p class="text-sm font-light mt-1">Air Conditioner Factory Opening Ceremony</p>
+            </div>
+        </header>
+
+        <!-- 2. 인사말 및 행사 개요 -->
+        <section class="p-6">
+            <h3 class="text-xl font-bold mb-3 text-green-700 border-l-4 border-amber-500 pl-2">
+                귀빈을 초대합니다
+            </h3>
+            <p class="text-gray-700 leading-relaxed text-sm">
+                안녕하세요, NEOPLATECH입니다.
+                귀사의 지속적인 관심과 협력에 깊이 감사드리며, 저희 NEOPLATECH은 에어컨 생산 공장을 성공적으로 완공하고 본격적인 생산을 시작하게 되었음을 알려드립니다.
+            </p>
+            <p class="text-gray-700 leading-relaxed mt-3 text-sm">
+                이에 뜻 깊은 순간을 함께 나누고자, 아래와 같이 오픈식을 개최하오니 바쁘시더라도 참석하시어 자리를 빛내주시기 바랍니다.
+            </p>
+            
+            <!-- Event Summary (Light Green Background, Green Text) -->
+            <div class="mt-6 bg-green-50/50 p-4 rounded-lg shadow-inner">
+                <p class="text-lg font-bold text-green-600 mb-2">행사 개요</p>
+                <ul class="space-y-2 text-sm text-gray-800">
+                    <li><span class="font-medium">행사명:</span> NEOPLATECH 에어컨 생산 공장 오픈식</li>
+                    <li><span class="font-medium">일시:</span> 2025년 10월 23일 (수), 16:00</li>
+                    <li><span class="font-medium">장소:</span> NEOPLATECH 공장 사무동 3층 (주소 하기참조)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 3. 일정 안내 (Visual Schedule - Amber Accent) -->
+        <section class="p-6 pt-0">
+            <h3 class="text-xl font-bold mb-4 text-green-700 border-l-4 border-amber-500 pl-2">
+                주요 일정
+            </h3>
+            <ol class="relative border-l border-amber-500 space-y-6 ml-2">
+                <!-- Step 1 -->
+                <li class="ml-6">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-amber-500 rounded-full -left-3 ring-8 ring-white">
+                        <svg data-lucide="calendar" class="w-3 h-3 text-white"></svg>
+                    </span>
+                    <h4 class="font-semibold text-lg text-gray-900">개회사 및 축사</h4>
+                    <p class="text-sm text-gray-600">행사의 시작과 축하 메시지</p>
+                </li>
+                <!-- Step 2 -->
+                <li class="ml-6">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-amber-500 rounded-full -left-3 ring-8 ring-white">
+                        <svg data-lucide="map-pin" class="w-3 h-3 text-white"></svg>
+                    </span>
+                    <h4 class="font-semibold text-lg text-gray-900">공장 소개 및 투어</h4>
+                    <p class="text-sm text-gray-600">최신 생산 라인 직접 확인</p>
+                </li>
+                <!-- Step 3 -->
+                <li class="ml-6">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-amber-500 rounded-full -left-3 ring-8 ring-white">
+                        <svg data-lucide="camera" class="w-3 h-3 text-white"></svg>
+                    </span>
+                    <h4 class="font-semibold text-lg text-gray-900">기념 촬영 및 다과</h4>
+                    <p class="text-sm text-gray-600">친교의 시간 및 간단한 만찬</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- 4. 오시는 길 및 회신 요청 (Light Green Background, Green/Amber Accents) -->
+        <section class="p-6 pt-0 bg-green-50/50">
+            <h3 class="text-xl font-bold mb-4 text-green-700 border-l-4 border-amber-500 pl-2">
+                오시는 길 및 회신 안내
+            </h3>
+
+            <!-- Location -->
+            <div class="mb-5">
+                <p class="flex items-center text-lg font-bold text-gray-700 mb-1">
+                    <svg data-lucide="map-pin" class="w-5 h-5 text-green-600 mr-2"></svg>
+                    공장 주소
+                </p>
+                <p class="text-sm text-gray-600 pl-7">
+                    Jl. Sulawesi Blok, 3-4 Gandamekar, Kab. Bekasi, Kode Pos: 17530, Provinsi jawa Barat.
+                </p>
+                
+                <!-- Actual factory image used here, linked to Google Maps -->
+                <a href="https://maps.app.goo.gl/PzS9wK5d9R8B2y2D9" target="_blank" class="block mt-3 rounded-lg overflow-hidden border border-gray-300 shadow-md hover:shadow-lg transition">
+                    <img src="uploaded:image_f0c2fc.jpg-770d92d7-6709-45ca-98d6-2323068bc9fa" alt="NEOPLATECH 공장 외관 사진" class="w-full h-auto object-cover">
+                </a>
+                <p class="text-xs text-gray-500 text-center mt-1">사진을 클릭하여 구글 지도로 이동</p>
+            </div>
+
+            <!-- RSVP -->
+            <div class="bg-white p-4 rounded-lg shadow-md border border-amber-300">
+                <p class="flex items-center text-lg font-bold text-amber-600 mb-2">
+                    <svg data-lucide="calendar" class="w-5 h-5 mr-2"></svg>
+                    참석 회신 요청
+                </p>
+                <p class="text-sm text-gray-800">
+                    원활한 행사 준비를 위해 **2025년 10월 17일**까지 회신 부탁드립니다.
+                </p>
+                <div class="mt-4 space-y-1 text-sm text-gray-700">
+                    <p class="flex items-center"><svg data-lucide="mail" class="w-4 h-4 text-green-500 mr-2"></svg> **담당자:** 장동혁 대리</p>
+                    <p class="flex items-center"><svg data-lucide="phone" class="w-4 h-4 text-green-500 mr-2"></svg> **연락처:** +62-852-8595-9275</p>
+                    <p class="flex items-center"><svg data-lucide="mail" class="w-4 h-4 text-green-500 mr-2"></svg> **이메일:** jangdonghyuk@neoplatech.com</p>
+                </div>
+            </div>
+
+        </section>
+        
+        <!-- Footer (Primary: Green) -->
+        <footer class="bg-green-700 text-center p-4 text-white text-sm">
+            <p>NEOPLATECH / 대표이사 이승원 드림</p>
+            <p class="mt-1 text-xs opacity-70">여러분의 소중한 발걸음이 저희에게 큰 힘이 됩니다.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
